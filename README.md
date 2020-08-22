@@ -19,3 +19,6 @@ Output of script returns the fraction of sites, of the original 500k, where muta
 
 plotting.R in the plotting folder
 R script for plotting figures in the mansuscript with the necessary data in the same folder
+
+alignment_and_piccard_processing.sh
+Bash script showing basic pipeline for alignment and processing of bam files with piccard (adding read group names and marking duplicate reads)
