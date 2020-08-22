@@ -5,7 +5,7 @@ library(windowscanr)
 library(dplyr)
 
 #input file for relevant genotype, contains coordinates + base quality info for heterozygotes (which provides enough info to filter genomic regions by # hets)
-rolwinWGS <- fread("../Duckweed/BCFtool_allsites/queries/GPL7_list_V1.txt", header = FALSE, sep = ' ')
+rolwinWGS <- fread("../GPL7_list_V1.txt", header = FALSE, sep = ' ')
 
 df <- aggregate(rolwinWGS$V2, by = list(rolwinWGS$V1), max)
 
@@ -32,7 +32,7 @@ rolwinWGSout <- winScan(x = test,
 
 #allow only windows with a max of 6 observed heterozygotes within 1000bp
 out = rolwinWGSout[rolwinWGSout$V3_n < 6,]
-write.table(out, "GPL7_hets_filtering", sep="\t", col.names = T, row.names = F, quote = F)
+#write.table(out, "GPL7_hets_filtering", sep="\t", col.names = T, row.names = F, quote = F)
 
 ########################################################################
 # optional can merge overlapping windows to speed things up downstream #
@@ -47,5 +47,5 @@ df <- reduce(dt)
 dc <- data.frame(df)
 dc$width <- NULL
 dc$strand <- NULL
-write.table(dc, "../TargetsWGGPL7_hets_5max.txt", sep="\t", col.names = F, row.names = F, quote = F)
+write.table(dc, "../GPL7_targets_passed_5hets1kb.txt", sep="\t", col.names = F, row.names = F, quote = F)
 
