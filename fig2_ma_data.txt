@@ -1,0 +1,6 @@
+1.69E-10	8.66E-11	3.18E-10	L. minor	Salt
+1.17E-10	4.92E-11	2.56E-10	S. polyrhiza (CC) 	Salt
+8.45406E-11	3.32239E-11	1.91675E-10	S. polyrhiza (GP23) 	Salt
+8.66E-11	3.47E-11	1.94E-10	L. minor	Control
+6.88E-11	2.53E-11	1.63E-10	S. polyrhiza (CC) 	Control
+9.78189E-11	4.60638E-11	1.96017E-10	S. polyrhiza (GP23) 	Control
