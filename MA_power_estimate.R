@@ -27,7 +27,7 @@ df3 <- rbind(allclean, onealt_red)
 
 sim <- colsplit(df3$r1, ',', names = c('ref', 'alt'))
 
-#function for drawing from binomial distribution in a dataframe, -.28 is expected frequency for spirodela, 0.34 for lemna minor
+#function for drawing from binomial distribution in a dataframe, 0.28 is expected frequency for spirodela, 0.34 for lemna minor
 bd <- function(x, p = 0.28){rbinom(1, x , 0.28)}
 #for applying to df
 sim$binom <- mapply(bd, sim$ref)
