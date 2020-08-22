@@ -12,7 +12,7 @@ ggplot(df, aes(x = sanger_Freq, y = illumina_freq ))+
   geom_smooth(method='lm', colour="black", se = FALSE)
 
 #figure 3 plotting mutation rates in two species of duckweed across 2 different treatments (control vs. salt stress)
-df = fread(../fig2_ma_data.txt, header=F)
+df = fread(../fig3_ma_data.txt, header=F)
 require(ggplot2)
 ggplot(df, aes(x = V4, y = V1, colour = factor(V5), group=V5)) +
   geom_point(size = 4,position=position_dodge(width=0.6)) +
@@ -27,7 +27,7 @@ ggplot(df, aes(x = V4, y = V1, colour = factor(V5), group=V5)) +
   theme(panel.grid.minor.x=element_blank(),panel.grid.minor.y=element_blank(),panel.grid.major.x=element_blank(), panel.grid.major.y=element_blank())
 
 #figure 4 plotting mutation rates in two species of duckweed across 2 different treatments (control vs. salt stress), with the 2 S. polyrhiza genotypes being separate
-df = fread(../fig3_ma_data.txt, header=F)
+df = fread(../fig4_ma_data.txt, header=F)
 require(ggplot2)
 ggplot(df, aes(x = V4, y = V1, colour = factor(V5), group=V5)) +
   geom_point(size = 4,position=position_dodge(width=0.6)) +
