@@ -1,3 +1,5 @@
+#!/usr/bin/Rscript
+
 setwd(../duckweedMA)
 library(reshape2)
 library(data.table)
