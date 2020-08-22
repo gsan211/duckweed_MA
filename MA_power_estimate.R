@@ -9,7 +9,7 @@ library(dplyr)
 
 
 #randomly sample values fromn each row (however many sample per row next to d)
-sample = fread(../sites_power_estimation.txt)
+sample = fread(../GP23_Hom_Random_sample_500k_1altorless.txt)
 sample$V1<- NULL
 sample2 <-t(apply(sample, 1, function(d) sample(d, 1)))
 
