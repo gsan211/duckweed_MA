@@ -9,7 +9,7 @@ Replicate file outputs are labelled with relevant genotypes codes
 Description of files:
 
 Genome_window_filtering.R in the filtering folder
-R script for conducting sliding window analysis on file containing genomic coordinates of heterozygous sites
+R script for conducting sliding window analysis on file containing genomic coordinates of heterozygous sites.
 Outputs from this analysis used in the publication are included in files GPL7_Targets_passed_5hets1kb.txt etc.
 
 MA_power_estimate.R in the power folder
